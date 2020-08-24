@@ -1,0 +1,208 @@
+:root{
+
+    --brigth-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+
+    --dark-graysh-blue: hsl(227, 12%, 61%);
+    --bery-dark-blue: hsl(233, 12%, 13%);
+    --very-pale-red: hsl(13, 100%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+}
+
+body{
+    font-family: 'Be Vietnam';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.main{
+    width: 98.9vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url("./images/bg-tablet-pattern.svg") no-repeat;
+    background-position: top -17rem right -11rem;
+    position: absolute;
+}
+
+.main .header{
+    /*flex: 1;*/
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    /*background-color: violet;*/
+    height: 80px;
+    padding-right: 11rem;
+}
+
+.main .header .logo{
+    flex: 1;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main .header .menu{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main .header .menu nav{
+    margin-top: 5px;
+}
+
+.main .header .menu nav a{
+    cursor: pointer;
+    color: var(--dark-blue);
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.main .header .menu nav a:hover :link :visited :active{
+    color: var(--dark-blue);
+}
+
+.main .header .getstarted{
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+.primary-button{
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    background-color: var(--brigth-red);
+    border: none;
+    color: white;
+    box-shadow: 0px 3px 5px var(--brigth-red);
+    transition: all 0.3s ease 0s;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.primary-button:hover{
+    
+    box-shadow: 0px 5px 10px var(--brigth-red);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.main .container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.main .container .general{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.main .container .general .general-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main .container .general .general-text div h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 55px;
+    color: var(--dark-blue);
+}
+
+.main .container .general .general-text div button{
+    margin-top: 15px;
+}
+
+.main .container .general .general-text div span {
+    color: var(--dark-graysh-blue);
+}
+
+.main .container .general .general-chart{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .general .general-chart img{
+    height: 450px;
+}
+
+.main .container .middle{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.main .container .middle .middle-left{
+    flex: 1;
+}
+.main .container .middle .middle-left h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+}
+
+.main .container .middle .middle-left span{
+    color: var(--dark-graysh-blue);
+}
+
+.main .container .middle .middle-right{
+    flex: 1;
+}
+.main .container .middle .middle-right .enum-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.main .container .middle .middle-right .enum-container .enumerator {
+    background-color: var(--brigth-red);
+    border-radius: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 33px;
+    margin-top: 10px;
+}
+
+.main .container .middle .middle-right .enum-container .enumerator span{
+    color: white;
+    font-weight: 700;
+}
+
+.main .container .middle .middle-right .enum-container .enum-text{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.main .container .middle .middle-right .enum-container .enum-text h3{
+    padding: 0;
+    margin: 0px 0px 10px 0px;
+    color: var(--dark-blue);
+}
+
+.main .container .middle .middle-right .enum-container .enum-text span{
+    padding: 0;
+    margin: 0;
+    color: var(--dark-graysh-blue);
+}
