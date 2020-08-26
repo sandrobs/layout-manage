@@ -2,12 +2,12 @@
 
     --brigth-red: hsl(12, 88%, 59%);
     --dark-blue: hsl(228, 39%, 23%);
-
     --dark-graysh-blue: hsl(227, 12%, 61%);
     --bery-dark-blue: hsl(233, 12%, 13%);
     --very-pale-red: hsl(13, 100%, 96%);
     --very-light-gray: hsl(0, 0%, 98%);
     --background-slide: #f1f2f6;
+    --color-hover-button: hsla(12, 90%, 64%, 0.904);
 
 }
 
@@ -19,13 +19,17 @@ body{
     font-size: 16px;
 }
 
+*{
+    outline: none;
+}
+
 .main{
     width: 98.9vw;
     display: flex;
     flex-direction: column;
     background: url("./images/bg-tablet-pattern.svg") no-repeat;
-    background-position: top -17rem right -11rem;
-    
+    background-position: top -8rem right -4rem;
+    background-size: 45%;
 }
 
 .header{
@@ -92,6 +96,7 @@ body{
     box-shadow: 0px 5px 10px var(--brigth-red);
     color: #fff;
     transform: translateY(-5px);
+    background-color: var(--color-hover-button);
 }
 
 .secondary-button{
@@ -109,7 +114,7 @@ body{
 }
 
 .secondary-button:hover{
-    
+    color: var(--color-hover-button);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.23);
     transform: translateY(-5px);
 }
@@ -275,10 +280,67 @@ body{
     width: 98.9vw;
     min-height: 200px;
     background-color: var(--brigth-red);
+    display: flex;
+    flex-direction: row;
+}
+
+.pre-footer div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./images/method-draw-image.svg") no-repeat ;
+    background-position: bottom -10rem left 10rem;
+    background-size: 63%;
+}
+.pre-footer div h1{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.pre-footer div + div{
+    flex: 1;
+    background-position: bottom 4rem left 30rem;
+    background-size: 63%;
+    justify-content: flex-end;
+}
+
+.pre-footer button{
+    margin-right: 9rem;
 }
 
 .footer{
     width: 98.9vw;
     min-height: 200px;
     background-color: var(--bery-dark-blue);
+    display: flex;
+}
+
+.footer-col1{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-col1 img{
+
+}
+
+.footer-col1 div{
+    min-height: 100px;
+}
+
+.footer-col2{
+    flex: 1;
+}
+
+.footer-col3{
+    flex: 1;
+}
+
+.footer-col4{
+    flex: 2;
 }
