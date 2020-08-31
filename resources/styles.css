@@ -8,6 +8,7 @@
     --very-light-gray: hsl(0, 0%, 98%);
     --background-slide: #f1f2f6;
     --color-hover-button: hsla(12, 90%, 64%, 0.904);
+    --color-footer-link: #FFF;
 
 }
 
@@ -333,14 +334,32 @@ body{
     min-height: 100px;
 }
 
+.footer-col1 div a{
+    font-size: 1.2rem;
+    margin: 0.3rem;
+}
+
 .footer-col2{
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-col3{
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-col4{
     flex: 2;
+}
+
+.footer-font-link{
+    color: var(--color-footer-link);
+    text-decoration: none;
+}
+
+.footer-font-link:hover{
+    color: var(--brigth-red);
 }
